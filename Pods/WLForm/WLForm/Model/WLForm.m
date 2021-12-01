@@ -51,18 +51,19 @@
     return dic;
 }
 
-- (NSDictionary *)validateItems {
+- (NSDictionary *)validateItems {   // 这里感觉直接返回一个BOOL值会更好些
     for (WLFormSectionViewModel *section in self.sectionArray) {
         for (WLFormItemViewModel *item in section.itemArray) {
             if (!item.isHidden && item.valueValidateBlock) {
                 NSDictionary *dic = item.valueValidateBlock(item.value);
-                NSNumber *ret = dic[kValidateRetKey];
+                NSNumber *ret = dic[kValidateRetKey];   // kValidateRetKey中存储的是一个BOOL值
                 NSAssert(ret, @"缺少参数");
                 if (!ret) continue;
-                if (!ret.boolValue) return dic;
+                if (!ret.boolValue) return dic; // 只要有一项为空就用该dict进行判断
             }
         }
     }
+    // 如果所有项都不为空，则直接返回kValidateRetKey为YES的dict
     return itemValid();
 }
 

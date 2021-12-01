@@ -257,9 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				049DDF5120AEE82100F22E06 /* Controller */,
-				049DDF5420AEE82100F22E06 /* Model */,
 				049DDF5520AEE82100F22E06 /* View */,
-				049DDF5C20AEE82100F22E06 /* ViewModel */,
 			);
 			path = ElectronicInvoiceQRCodeManager;
 			sourceTree = "<group>";
@@ -277,13 +275,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		049DDF5420AEE82100F22E06 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		049DDF5520AEE82100F22E06 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,13 +288,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		049DDF5C20AEE82100F22E06 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		049DDF6720B447F400F22E06 /* QRCodeUtil */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,6 +295,42 @@
 				049DDF6920B447F400F22E06 /* QRCodeUtil.m */,
 			);
 			path = QRCodeUtil;
+			sourceTree = "<group>";
+		};
+		497C033F275761BB0078A40C /* WLMSelectApplyMerchantVC */ = {
+			isa = PBXGroup;
+			children = (
+				9C140ABE20AC4EE7006E6747 /* WLMSelectApplyMerchantVC.h */,
+				9C140ABF20AC4EE7006E6747 /* WLMSelectApplyMerchantVC.m */,
+			);
+			path = WLMSelectApplyMerchantVC;
+			sourceTree = "<group>";
+		};
+		497C0340275762110078A40C /* WLMSelectedApplyMerchantVM */ = {
+			isa = PBXGroup;
+			children = (
+				9C140ABB20AC4ECB006E6747 /* WLMSelectedApplyMerchantVM.h */,
+				9C140ABC20AC4ECB006E6747 /* WLMSelectedApplyMerchantVM.m */,
+			);
+			path = WLMSelectedApplyMerchantVM;
+			sourceTree = "<group>";
+		};
+		497C0341275763D80078A40C /* WLMEInvoiceIntroduceVC */ = {
+			isa = PBXGroup;
+			children = (
+				9C140AA620ABC1C3006E6747 /* WLMEInvoiceIntroduceVC.h */,
+				9C140AA720ABC1C3006E6747 /* WLMEInvoiceIntroduceVC.m */,
+			);
+			path = WLMEInvoiceIntroduceVC;
+			sourceTree = "<group>";
+		};
+		497C0342275765F00078A40C /* WLMMoreTaxationInfoVC */ = {
+			isa = PBXGroup;
+			children = (
+				9CEEA5CF209DC10000673214 /* WLMMoreTaxationInfoVC.h */,
+				9CEEA5D0209DC10000673214 /* WLMMoreTaxationInfoVC.m */,
+			);
+			path = WLMMoreTaxationInfoVC;
 			sourceTree = "<group>";
 		};
 		71DFEAB7C76F1CE63CE6F560 /* Pods */ = {
@@ -411,7 +431,6 @@
 			children = (
 				9C26473B209AEEFA004A4551 /* ViewModel */,
 				9C26473C209AEEFA004A4551 /* Controller */,
-				9C26473D209AEEFA004A4551 /* Model */,
 				9C26473E209AEEFA004A4551 /* View */,
 			);
 			path = ElectronicInvoiceDetail;
@@ -439,13 +458,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		9C26473D209AEEFA004A4551 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		9C26473E209AEEFA004A4551 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -460,19 +472,10 @@
 		9C26473F209AEEFA004A4551 /* ElectronicInvoiceSearch */ = {
 			isa = PBXGroup;
 			children = (
-				9C264740209AEEFA004A4551 /* ViewModel */,
 				9C264741209AEEFA004A4551 /* Controller */,
 				9C264742209AEEFA004A4551 /* Model */,
-				9C264743209AEEFA004A4551 /* View */,
 			);
 			path = ElectronicInvoiceSearch;
-			sourceTree = "<group>";
-		};
-		9C264740209AEEFA004A4551 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		9C264741209AEEFA004A4551 /* Controller */ = {
@@ -493,13 +496,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		9C264743209AEEFA004A4551 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		9C264744209AEEFA004A4551 /* ElectronicInvoiceApply */ = {
 			isa = PBXGroup;
 			children = (
@@ -514,10 +510,9 @@
 		9C264745209AEEFA004A4551 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				497C0340275762110078A40C /* WLMSelectedApplyMerchantVM */,
 				9C264751209AF037004A4551 /* WLMInvoiceApplyVM.h */,
 				9C264752209AF037004A4551 /* WLMInvoiceApplyVM.m */,
-				9C140ABB20AC4ECB006E6747 /* WLMSelectedApplyMerchantVM.h */,
-				9C140ABC20AC4ECB006E6747 /* WLMSelectedApplyMerchantVM.m */,
 				9C140AC120AC576F006E6747 /* WLMFillTaxationInfoVM.h */,
 				9C140AC220AC576F006E6747 /* WLMFillTaxationInfoVM.m */,
 				9C140AC420AC5789006E6747 /* WLMMoreTaxationInfoVM.h */,
@@ -535,24 +530,21 @@
 		9C264746209AEEFA004A4551 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				497C033F275761BB0078A40C /* WLMSelectApplyMerchantVC */,
+				497C0341275763D80078A40C /* WLMEInvoiceIntroduceVC */,
+				497C0342275765F00078A40C /* WLMMoreTaxationInfoVC */,
 				9C26474E209AEFE2004A4551 /* WLMInvoiceApplyVC.h */,
 				9C26474F209AEFE2004A4551 /* WLMInvoiceApplyVC.m */,
 				9CEEA5CC209D9DB900673214 /* WLMFillTaxationInfoVC.h */,
 				9CEEA5CD209D9DB900673214 /* WLMFillTaxationInfoVC.m */,
-				9CEEA5CF209DC10000673214 /* WLMMoreTaxationInfoVC.h */,
-				9CEEA5D0209DC10000673214 /* WLMMoreTaxationInfoVC.m */,
 				9CC4FEF320A2E70800232074 /* WLMPackageSelectVC.h */,
 				9CC4FEF420A2E70800232074 /* WLMPackageSelectVC.m */,
 				9CC4FF0520A318EB00232074 /* WLMInvoiceApplyResultVC.h */,
 				9CC4FF0620A318EB00232074 /* WLMInvoiceApplyResultVC.m */,
-				9C140ABE20AC4EE7006E6747 /* WLMSelectApplyMerchantVC.h */,
-				9C140ABF20AC4EE7006E6747 /* WLMSelectApplyMerchantVC.m */,
 				9C140A9D20ABBFFC006E6747 /* WLMEInvoiceProtocolVC.h */,
 				9C140A9E20ABBFFC006E6747 /* WLMEInvoiceProtocolVC.m */,
-				9C140AA620ABC1C3006E6747 /* WLMEInvoiceIntroduceVC.h */,
-				9C140AA720ABC1C3006E6747 /* WLMEInvoiceIntroduceVC.m */,
-				9C50233920BBCDA50024BF01 /* WLMSearchInvoiceItemVC.h */,
 				9C50233A20BBCDA50024BF01 /* WLMSearchInvoiceItemVC.m */,
+				9C50233920BBCDA50024BF01 /* WLMSearchInvoiceItemVC.h */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -589,9 +581,7 @@
 			isa = PBXGroup;
 			children = (
 				9CA4037820AEE0E300E4AA51 /* Controller */,
-				9CA4038520AEE0E300E4AA51 /* Model */,
 				9CA4038620AEE0E300E4AA51 /* View */,
-				9CA4037720AEE0E300E4AA51 /* ViewModel */,
 			);
 			path = ElectronicInvoiceManager;
 			sourceTree = "<group>";
@@ -634,13 +624,6 @@
 			path = SegmentController;
 			sourceTree = "<group>";
 		};
-		9CA4037720AEE0E300E4AA51 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		9CA4037820AEE0E300E4AA51 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -658,13 +641,6 @@
 				9CA4038320AEE0E300E4AA51 /* WLMPackageInfoVC.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		9CA4038520AEE0E300E4AA51 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		9CA4038620AEE0E300E4AA51 /* View */ = {
@@ -704,7 +680,6 @@
 				9C2646D2209994C8004A4551 /* Frameworks */,
 				9C2646D3209994C8004A4551 /* Resources */,
 				D556C94F39542C276B946782 /* [CP] Embed Pods Frameworks */,
-				95B4D5ACBEA742737D2DAC2C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -785,21 +760,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		95B4D5ACBEA742737D2DAC2C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLMElectronicInvoice/Pods-WLMElectronicInvoice-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		BA7CE3066FE8BDF402478757 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -824,12 +784,10 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-WLMElectronicInvoice/Pods-WLMElectronicInvoice-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-WLMElectronicInvoice/Pods-WLMElectronicInvoice-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
-				"${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
-				"${BUILT_PRODUCTS_DIR}/MLeaksFinder/MLeaksFinder.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
@@ -843,10 +801,8 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBRetainCycleDetector.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLeaksFinder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
@@ -859,7 +815,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLMElectronicInvoice/Pods-WLMElectronicInvoice-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WLMElectronicInvoice/Pods-WLMElectronicInvoice-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1060,7 +1016,7 @@
 			baseConfigurationReference = 8EC5F3AAC5E149448B9054F5 /* Pods-WLMElectronicInvoice.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9J6JH9B3QM;
+				DEVELOPMENT_TEAM = N4686HA3AU;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WLMElectronicInvoice/WLMElectronicInvoice.pch";
 				INFOPLIST_FILE = WLMElectronicInvoice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1076,7 +1032,7 @@
 			baseConfigurationReference = 0C58E3E41CE2B24BB6F43768 /* Pods-WLMElectronicInvoice.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9J6JH9B3QM;
+				DEVELOPMENT_TEAM = N4686HA3AU;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WLMElectronicInvoice/WLMElectronicInvoice.pch";
 				INFOPLIST_FILE = WLMElectronicInvoice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

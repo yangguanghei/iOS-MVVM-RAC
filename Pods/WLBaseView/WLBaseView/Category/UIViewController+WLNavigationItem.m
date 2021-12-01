@@ -18,7 +18,7 @@
     NSBundle *bundle = [NSBundle bundleForClass:NSClassFromString(@"WLBaseView")];
     UIImage *image = [UIImage imageNamed:@"icon_back" inBundle:bundle compatibleWithTraitCollection:nil];
     [itemBtn setImage:image forState:UIControlStateNormal];
-    [itemBtn setImageEdgeInsets:UIEdgeInsetsMake(0, -5, 0, 5)];
+//    [itemBtn setImageEdgeInsets:UIEdgeInsetsMake(0, -5, 0, 5)];
     itemBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
     [itemBtn addTarget:self action:@selector(popVC) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithCustomView:itemBtn];

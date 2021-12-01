@@ -29,6 +29,6 @@ target 'WLMElectronicInvoice' do
   pod 'ReactiveObjC'
   pod 'MJExtension'
   pod 'DZNEmptyDataSet'
-  pod 'MLeaksFinder'
+#  pod 'MLeaksFinder'
 
 end

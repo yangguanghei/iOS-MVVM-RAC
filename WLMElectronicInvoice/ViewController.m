@@ -35,8 +35,7 @@
     
     self.title = @"这是电子发票业务组件模块";
     self.viewModelService = [[WLBViewModelServiceImp alloc] init];
-    WLMSelectedApplyMerchantVM *viewModel = [[WLMSelectedApplyMerchantVM alloc] initWithService:self.viewModelService params:nil];
-    self.VC = [[WLMSelectApplyMerchantVC alloc] initWithViewModel:viewModel];
+
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = CGRectMake(0, 0, 300, 100);
@@ -48,6 +47,8 @@
 }
 
 - (void)push {
-    [self.navigationController pushViewController:self.VC animated:YES];
+    WLMSelectedApplyMerchantVM *viewModel = [[WLMSelectedApplyMerchantVM alloc] initWithService:self.viewModelService params:nil];
+    UIViewController *vc = [[WLMSelectApplyMerchantVC alloc] initWithViewModel:viewModel];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 @end
